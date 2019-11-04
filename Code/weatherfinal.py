@@ -14,17 +14,11 @@ x = pd.read_csv('delhidata.csv')
 # print(list(x))
 
 a = np.array(x)
-
 y = a[:, 3]
-
 x = np.column_stack((x.hum, x.tempm))
 
-
 clf = SVC(kernel='rbf', gamma=10)
-
 clf.fit(x, y)
-
-print(clf.predict([[25, 43]]))
 
 
 while 1:  # Do this in loop

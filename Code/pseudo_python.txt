@@ -1,0 +1,25 @@
+This is the python code for getting data from arduino IDE
+and using an SVM model on the dataset.
+
+create "arduino" object to access serial port
+delay code for 2 seconds
+read dataset's csv file
+create array from csv file
+extract weather conditions from dataset
+create table for humidity and temperature
+
+create classifier with SVC
+train the data with the classifier
+
+loop forever{
+	get temperature from arduino IDE
+	get humidity from arduino IDE
+
+	print temperature
+	print humidity
+
+	create array with temperature and humidity values
+	test the SVC model on this data
+	print the prediction
+}
+	

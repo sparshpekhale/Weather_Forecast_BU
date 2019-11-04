@@ -1,0 +1,18 @@
+This is the C++ code uploaded to the arduino board
+which gets the temperature and humidity values from the sensor.
+This data is printed on the serial monitor for the python IDE to read.
+
+Start {
+	begin serial communication
+}
+
+loop {
+	while (data is available) {
+		read the data from sensor
+	}
+
+	print temperature
+	print humidity
+
+	delay code for 2 seconds
+}
